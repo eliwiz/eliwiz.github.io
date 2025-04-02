@@ -1,0 +1,31 @@
+{%extends "base.html"%}
+{%block title%}Contact us -Plantastic{%endblock%}
+
+{%block content%}
+<div class="containter p-5">
+    <br><br>
+    <h1 class="titleBold" style="font-size:40px">Get in Touch</h1>
+    <div class="row">
+        <div class="col-6 p-4" >
+            <h2 class="title">Send us a Message!</h2>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Your Name</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your Name">
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="exampleTextarea">Your Message</label>
+                <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Enter your Message"></textarea>
+            </div>
+            <br>
+            <button class="btn btn-dark green btn-lg"> Send Message!</button>
+            
+            <br><br>
+            <p>Also, feel free to contact us with our other methods (contact@plantastic.com or calling (555) 867-4321), or in person. Our staff would love to help you!</p>
+        </div>
+        <div class="col-6">
+            <img src="static/assets/images/contactUs.jpg" alt="" style="max-width:100%;height:auto;border-radius: 10%;">
+        </div>
+    </div>
+</div>
+{%endblock%}

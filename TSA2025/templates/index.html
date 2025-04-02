@@ -1,0 +1,120 @@
+{%extends "base.html"%}
+{%block title%}Home -Plantastic{%endblock%}
+
+
+{%block content%}
+
+<div style="position: relative; width: 100%;">
+    <img src="static/assets/images/title.jpg" alt="Sample Image" style="width: 100%;">
+    <div style="position: absolute; top: 50%; left: 10%; transform: translateY(-50%); color: white; font-size: 24px; font-weight: bold; text-align: left;">
+        <h1 class="titleBold"style="font-size: 55px; margin: 0;">Welcome to Plantastic!</h1>
+        <h1 style="font-size: 25px; margin: 0;">Here we value farm fresh, locally grown, and eco-concious food <br> Give us a try to help the environment and your pockets!</h1>
+        <br>
+        <a class="btn green btn-dark btn-lg" href="#" role="button">Order Now ></a>
+    </div>
+</div>
+
+<div class="main p-3 m-5">
+    <h2 class="titleBold" style="text-align:center;font-size:40px">Celebrate the endless possibilities of plant-based food </h2> <br><br><br>
+
+    <div class="row justify-content-center align-items-center" style="height: 100%;">
+      <div class="col-3 title d-flex align-items-center justify-content-center">
+          <h4 style="font-size:35px">Because we believe that eating well should be 
+              <span class="green" style="color:aliceblue;">delicious, inclusive, and exciting</span>
+          </h4>
+      </div>
+      <div class="col-5">
+          <img src="static/assets/images/blurb.jpg" alt="" style="max-width:100%; max-height:auto; border-radius: 10%;">
+      </div>
+      <div class="col-4"> 
+          <ul style="font-size:23px">
+              <li>From our customizable salad bar to our delicious, allergy-friendly meals, you are sure to find food that you can safely enjoy...</li>
+              <li>Whether you’re craving a crisp, fresh salad or a warm, hearty meal, Plantastic has options for you...</li>
+              <li>Allergy-friendly. Flavor-packed. 100% plant-based. Because we believe that eating well should be delicious, inclusive, and exciting...</li>
+          </ul>
+      </div>
+  </div>
+  
+            
+</div>
+<div class="main p-1">
+    <div class="row text-center">
+        <div class="col-4 d-flex justify-content-center">
+            <a class="btn btn-dark green btn-lg" href="#" role="button">View Menu</a>
+        </div>
+        <div class="col-4 d-flex justify-content-center">
+            <a class="btn btn-dark green btn-lg" href="#" role="button">Recipe Spotlight</a>
+        </div>
+        <div class="col-4 d-flex justify-content-center">
+            <a class="btn btn-dark green btn-lg" href="#" role="button">Why Vegan?</a>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="main p-5">
+    <h3 class="title" style="font-size:35px">Why They’re Coming Back for More</h3>
+    <div style="max-width:66vw;margin: auto;">
+    <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Review 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Review 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Review 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Review 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="static/assets/images/rating1.png" class="d-block w-100" alt="..." >
+          </div>
+          <div class="carousel-item">
+            <img src="static/assets/images/rating2.png" class="d-block w-100" alt="..." >
+          </div>
+          <div class="carousel-item">
+            <img src="static/assets/images/rating3.png" class="d-block w-100" alt="..." >
+          </div>
+          <div class="carousel-item">
+            <img src="static/assets/images/rating4.png" class="d-block w-100" alt="..." >
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+</div>
+<div class="contact p-5"> 
+  <h3 class="title" style="font-size:30px">Get in Touch</h3>
+  <hr>
+  <div class="row">
+    <div class="col-6">
+      <h4>Reach us at contact@plantastic.com or (555) 867-4321</h4>
+      <br>
+      <h4>Also, join our newsletter for new locations, menu updates, coupons and other promotions!</h4>
+      <button class="btn btn-lg btn-dark green">Join our Newsletter</button>
+    </div>
+    <div class="col-6"> 
+      <h4>Pay us a visit at one of our three locations:</h4>
+      <ul>
+        <li>
+          204 Greenway Blvd, New York, NY 10001
+        </li>
+        <li>
+          572 Sunset Ave, Los Angeles, CA 90012
+        </li>
+        <li>
+          729 Fresh St, Chicago, IL 60611
+        </li>
+      </ul>
+    </div>
+    <h2 class="titleBold"style="text-align:center;">We can't wait to see you soon!</h2>
+  </div>
+</div>
+
+
+
+
+{%endblock%}
