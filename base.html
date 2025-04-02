@@ -21,68 +21,53 @@
             font-family: "Arvo", serif;
             font-weight: 400;
             font-style: normal;
-          }
-          
-          .titleBold {
+        }
+
+        .titleBold {
             font-family: "Arvo", serif;
             font-weight: 700;
             font-style: normal;
-          }
+        }
 
         a:hover.navbar-link {
             background-color: #56af76;
         }
 
-        /* Sticky Navbar */
         .sticky-navbar {
             position: fixed;
             top: 0;
             width: 100%;
             z-index: 1000;
             background-color: white;
-            /* Ensures visibility */
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            /* Optional shadow */
         }
 
-        /* Move Collapsed Menu with Navbar */
         .collapsible-menu {
             position: fixed;
             top: 60px;
-            /* Adjust to navbar height */
             left: 0;
             width: 100%;
             z-index: 999;
             background-color: white;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             display: none;
-            /* Initially hidden */
         }
 
-        /* Show class for toggling */
         .collapsible-menu.show {
             display: block;
         }
 
         #navbarToggleExternalContent {
             position: fixed;
-            /* Ensures it overlays content */
             top: 70px;
-            /* Adjust based on navbar height */
             left: 50%;
             transform: translateX(-50%);
-            /* Centers the dropdown */
             width: 90%;
-            /* Adjust width to desired size */
 
             background: #f8f9fa;
-            /* Ensures it looks like a dropdown */
             border-radius: 20px;
-            /* Smooth rounded edges */
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            /* Subtle shadow effect */
             z-index: 1050;
-            /* Keeps it above other content */
         }
 
         .green {
@@ -92,9 +77,7 @@
 </head>
 
 <body>
-    <!-- navbar -->
     <div class="pos-f-t">
-        <!-- Sticky Navbar -->
         <nav class="navbar navbar-light bg-light sticky-navbar">
             <button class="navbar-toggler" type="button" id="navbarToggler">
                 <span class="navbar-toggler-icon"></span>
@@ -119,7 +102,7 @@
     <script>
         document.getElementById("navbarToggler").addEventListener("click", function () {
             let menu = document.getElementById("navbarToggleExternalContent");
-            menu.classList.toggle("show"); // Manually toggle the collapse
+            menu.classList.toggle("show");
         });
     </script>
 

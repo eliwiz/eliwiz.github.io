@@ -21,68 +21,53 @@
             font-family: "Arvo", serif;
             font-weight: 400;
             font-style: normal;
-          }
-          
-          .titleBold {
+        }
+
+        .titleBold {
             font-family: "Arvo", serif;
             font-weight: 700;
             font-style: normal;
-          }
+        }
 
         a:hover.navbar-link {
             background-color: #56af76;
         }
 
-        /* Sticky Navbar */
         .sticky-navbar {
             position: fixed;
             top: 0;
             width: 100%;
             z-index: 1000;
             background-color: white;
-            /* Ensures visibility */
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            /* Optional shadow */
         }
 
-        /* Move Collapsed Menu with Navbar */
         .collapsible-menu {
             position: fixed;
             top: 60px;
-            /* Adjust to navbar height */
             left: 0;
             width: 100%;
             z-index: 999;
             background-color: white;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             display: none;
-            /* Initially hidden */
         }
 
-        /* Show class for toggling */
         .collapsible-menu.show {
             display: block;
         }
 
         #navbarToggleExternalContent {
             position: fixed;
-            /* Ensures it overlays content */
             top: 70px;
-            /* Adjust based on navbar height */
             left: 50%;
             transform: translateX(-50%);
-            /* Centers the dropdown */
             width: 90%;
-            /* Adjust width to desired size */
 
             background: #f8f9fa;
-            /* Ensures it looks like a dropdown */
             border-radius: 20px;
-            /* Smooth rounded edges */
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            /* Subtle shadow effect */
             z-index: 1050;
-            /* Keeps it above other content */
         }
 
         .green {
@@ -92,9 +77,7 @@
 </head>
 
 <body>
-    <!-- navbar -->
     <div class="pos-f-t">
-        <!-- Sticky Navbar -->
         <nav class="navbar navbar-light bg-light sticky-navbar">
             <button class="navbar-toggler" type="button" id="navbarToggler">
                 <span class="navbar-toggler-icon"></span>
@@ -119,7 +102,7 @@
     <script>
         document.getElementById("navbarToggler").addEventListener("click", function () {
             let menu = document.getElementById("navbarToggleExternalContent");
-            menu.classList.toggle("show"); // Manually toggle the collapse
+            menu.classList.toggle("show");
         });
     </script>
 
@@ -128,25 +111,28 @@
         <br><br>
         <h1 class="titleBold" style="font-size:40px">Get in Touch</h1>
         <div class="row">
-            <div class="col-6 p-4" >
+            <div class="col-6 p-4">
                 <h2 class="title">Send us a Message!</h2>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Your Name</label>
                     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your Name">
-                  </div>
-                  <br>
-                  <div class="form-group">
+                </div>
+                <br>
+                <div class="form-group">
                     <label for="exampleTextarea">Your Message</label>
-                    <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Enter your Message"></textarea>
+                    <textarea class="form-control" id="exampleTextarea" rows="3"
+                        placeholder="Enter your Message"></textarea>
                 </div>
                 <br>
                 <button class="btn btn-dark green btn-lg"> Send Message!</button>
-                
+
                 <br><br>
-                <p>Also, feel free to contact us with our other methods (contact@plantastic.com or calling (555) 867-4321), or in person. Our staff would love to help you!</p>
+                <p>Also, feel free to contact us with our other methods (contact@plantastic.com or calling (555)
+                    867-4321), or in person. Our staff would love to help you!</p>
             </div>
             <div class="col-6">
-                <img src="static/assets/images/contactUs.jpg" alt="" style="max-width:100%;height:auto;border-radius: 10%;">
+                <img src="static/assets/images/contactUs.jpg" alt=""
+                    style="max-width:100%;height:auto;border-radius: 10%;">
             </div>
         </div>
     </div>
